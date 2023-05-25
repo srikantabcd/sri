@@ -19,6 +19,7 @@ function App() {
   }, [timer]);
 
   const handleInputChange = (event) => {
+    let prevKeysPressed
     const typedKey = event.target.value.slice(-1);
     setInputValue(typedKey);
 
